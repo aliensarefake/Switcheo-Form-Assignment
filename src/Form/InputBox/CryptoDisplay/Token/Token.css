@@ -1,0 +1,33 @@
+.tokenContainer{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.tokenImg{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 14px;
+}
+
+.tokenContainer:hover{
+    background-color: beige;
+}
+
+.selectedToken{
+    display: none;
+}
+
+.tokenMainName{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.tokenSubName{
+    font-size: 14px;
+    color: rgba(34, 34, 34, 0.8);
+
+}

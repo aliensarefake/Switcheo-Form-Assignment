@@ -1,0 +1,86 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal-overlay.show {
+    opacity: 1;
+  }
+
+  .modalText{
+    font-weight: 535;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+
+  .modal-content {
+    background-color: rgb(249, 249, 249);
+    border-radius: 20px;
+    border: 1px solid rgba(34, 34, 34, 0.07);
+    box-shadow: rgba(51, 53, 72, 0.04) 8px 12px 20px, rgba(51, 53, 72, 0.02) 4px 6px 12px, rgba(51, 53, 72, 0.04) 4px 4px 8px;
+    width: 50vw;
+    overflow: hidden auto;
+    max-width: 420px;
+    max-height: 80vh;
+    min-height: 80vh;    z-index: 10000;
+    padding: 20px 0;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .modal-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .modal-content.show {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .lineBreak{
+    height: 1px;
+    background-color: black;
+    opacity: 0.2;
+  }
+
+  .selectRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  i.uil-times{
+    font-size: 26px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+    
+  @media (max-width: 1024px) {
+.modal-content{
+  width: 80vw;
+
+}
+  }
+  
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    .modal-content{
+      width: 70vw;
+    
+    }
+  }

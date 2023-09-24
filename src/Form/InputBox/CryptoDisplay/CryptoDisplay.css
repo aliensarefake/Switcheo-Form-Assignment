@@ -1,0 +1,79 @@
+.cryptoContainer{
+    background-color: rgb(255, 255, 255);
+    border-radius: 18px;
+    border: 1px solid rgba(34, 34, 34, 0.07);
+    font-size: 22px;
+    font-weight: 525;
+    padding: 4px 8px 4px 4px;
+    gap: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}   
+
+.cryptoContainer:hover{
+    filter: brightness(95%);
+}
+
+.crypto{
+    display: flex;
+    align-items: center;
+}
+
+.cryptoText{
+    white-space: nowrap;
+}
+
+.cryptoImg{
+    height: 24px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+
+
+.selectTokenContainer{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(100, 90, 255); 
+    border: 1px solid rgb(100, 90, 255); 
+    font-size: 20px;
+    font-weight: 485;
+    padding: 6px 6px 6px 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
+    transition: filter 0.3s ease;
+}
+
+.selectTokenContainer:hover{
+    filter: brightness(98%);
+}
+
+.tokenText{
+    white-space: nowrap;
+}
+
+i.uil-angle-down{
+    font-size: 24px;
+}
+
+
+    
+@media (max-width: 1024px) {
+    .cryptoContainer{
+        transform: scale(0.9);
+        margin-right: -10%;
+
+    }
+    .selectTokenContainer{
+        transform: scale(0.9);
+        margin-right: -10%;
+    }
+}
+      

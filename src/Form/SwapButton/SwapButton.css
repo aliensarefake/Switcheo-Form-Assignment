@@ -1,0 +1,25 @@
+.swapText{
+    text-align: center;
+}
+
+.swapButton{
+    border-radius: 16px;
+    border: 1px solid transparent;
+    background-color: rgb(240, 240, 255); 
+    color: rgb(100, 90, 255); 
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px;
+    margin-top: 8px;
+    cursor: pointer;
+    line-height: 1.5;
+
+
+    transition: filter 0.3s ease;
+
+}
+
+.swapButton:hover{
+    filter: brightness(98%);
+}

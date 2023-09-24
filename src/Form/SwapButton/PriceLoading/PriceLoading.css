@@ -1,0 +1,35 @@
+.priceContainer{
+    border: 1px solid rgba(34, 34, 34, 0.07);
+    border-radius: 16px;
+    padding: 12px 16px;
+    margin-top: 5px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span.price{
+    margin-left: 4px;
+    color: rgba(34, 34, 34, 0.6);
+}
+
+.lastUpdated{
+    margin-top: 8px;
+}
+
+span.dateHeader{
+    color: #40826D;
+}
+
+span.updatedDate{
+    color: rgba(34, 34, 34, 0.6);
+}
+
+
+@media (max-width: 1024px) {
+    .priceContainer{
+        font-size: 12px;
+    }
+  }
+  

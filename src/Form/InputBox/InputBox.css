@@ -1,0 +1,70 @@
+.inputBoxContainer{
+    background-color: rgb(249, 249, 249);
+    border-radius: 16px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.invalid {
+    border: 2px solid #D32F2F;  /* Unconventional yet aesthetically pleasing shade of red */
+    animation: vibrate 0.2s ease-in-out 1;  /* More subtle and realistic animation */
+  }
+  
+  @keyframes vibrate {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-2px); }
+    40% { transform: translateX(2px); }
+    60% { transform: translateX(-1px); }
+    80% { transform: translateX(1px); }
+    100% { transform: translateX(0); }
+  }
+
+
+.payOrRcv{
+    font-weight: 485;
+    font-size: 13px;
+    color: rgb(125, 125, 125);
+    position: absolute;
+    transform: translate(0, -20px);
+    display: flex;
+}
+
+.cryptoValue{
+    text-align: left;
+    font-size: 32px;
+    font-weight: 485;
+    max-height: 44px;
+    width: 75%;
+    overflow: hidden;
+    border: none;
+    background-color: rgb(249, 249, 249);;
+}
+
+.cryptoValue:focus{
+    outline: none;
+}
+
+.cryptoValue::placeholder{
+    opacity: 0.4;
+}
+
+
+.loadingCircle {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 5px solid blue; /* You can choose your own color */
+    width: 13px;
+    height: 13px;
+    animation: spin 1s linear infinite;
+    position: relative;
+    bottom: 1px;
+    margin-left: 5px;
+  }
+  
+  @keyframes spin {
+    0% { transform:  rotate(0deg); }
+    100% { transform:  rotate(360deg); }
+  }

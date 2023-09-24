@@ -1,0 +1,68 @@
+.formContainer{
+  box-shadow: 
+  rgba(108, 99, 255, 0.04) 0px 0px 10px 0px, 
+  rgba(108, 99, 255, 0.12) 0px 40px 120px 0px,
+  rgba(108, 99, 255, 0.2) 0px 2px 5px 0px,  
+  rgba(108, 99, 255, 0.3) 0px 4px 6px 0px;  
+
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+    border: 1px solid #22222212;
+    padding: 12px 8px 8px;
+    width: 35%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 200px;
+}
+
+.formFirstRow{
+  font-weight: 485;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(34, 34, 34, 1);
+  margin-left: 10px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.formThirdRow{
+    display: flex;
+    justify-content: center;
+}
+
+.exchangeButton{
+    transform: rotate(90deg);
+    font-size: 20px;
+}
+
+.exchangeButton:hover{
+    cursor: pointer;
+}
+
+.spin {
+    animation: spinAnimation 0.5s ease forwards;
+  }
+  
+  @keyframes spinAnimation {
+    from {
+      transform: rotate(90deg);
+    }
+    to {
+      transform: rotate(450deg); /* 90 + 360 */
+    }
+  }
+
+  
+  @media (max-width: 1024px) {
+    .formContainer{
+      width: 80%
+    }
+  }
+  
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    .formContainer{
+      width: 50%
+    }
+  }
