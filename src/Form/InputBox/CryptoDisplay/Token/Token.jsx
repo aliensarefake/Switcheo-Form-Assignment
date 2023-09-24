@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './Token.css';
 
 const Token = (props) => {
-    const {currency, name, url, onChange, isOpen, setCrypto, setPrice, price, otherCrypto, setDisplayPrice, setLastUpdated, date} = props
+    const {currency, name, onChange, isOpen, setCrypto, setPrice, price, otherCrypto, setDisplayPrice, setLastUpdated, date} = props
     const handleTokenClick = () => {
         onChange(!isOpen);
         setCrypto(currency);

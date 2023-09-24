@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './SwapButton.css';
 
 const SwapButton = (props) =>{
-    const {payPrice, rcvPrice, rcvAmount, payAmount, setRcvValidate, setPayValidate, setProcess} = props
+    const {payPrice, rcvPrice, payAmount, setRcvValidate, setPayValidate, setProcess} = props
 
     const resetValidation = (validationSetter) => {
         setTimeout(() => {

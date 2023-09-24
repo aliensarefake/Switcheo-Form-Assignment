@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './CryptoDisplay.css';
 
 const CryptoDisplay = (props) => {
-    const {crypto, url, onClick} = props
+    const {crypto, onClick} = props
     return(
         <div>
         {
